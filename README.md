@@ -1,6 +1,7 @@
 # 🚀 VLP finetune code for AI for Vision-Language Models in Medical Imaging (IN2107)
 
 **This repository contains finetune code for the seminar "AI for Vision-Language Models in Medical Imaging (IN2107)." For more information, visit the [VLP Seminar page](https://compai-lab.github.io/teaching/vlm_seminar/).**
+![alt text](images/image.png)
 
 The code is designed to fine-tune Vision-Language Pre-trained models for downstream tasks, including classification, segmentation, and detection. You can also develop additional downstream tasks based on this repository.
 

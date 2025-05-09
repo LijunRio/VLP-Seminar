@@ -72,7 +72,9 @@ if __name__ == '__main__':
     print("Total number of keys:", len(img_encoder_keys))  # Print the total number of keys
 
     # import pdb; pdb.set_trace()
-
+    
+    # Here you may need to modify to different paper's checkpoint
+    # find the encoder part's state_dict keys in the checkpoint
     # Check if pretrained weights should be loaded
     if config['det']['pretrained']:
         # Load the checkpoint file

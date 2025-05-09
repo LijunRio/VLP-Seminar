@@ -67,7 +67,7 @@ if __name__ == '__main__':
         checkpoint_path = config['cls']['checkpoint']
         checkpoint = torch.load(checkpoint_path)
         model = FinetuneClassifier(config)
-        model_state_dict = model.state_dict()
+        model_state_dict = model.state_dict() # need to check your model's state_dict, and make sure the checkpoint's state_dict name is the same as the model here.
         common_keys = set(checkpoint['state_dict'].keys()).intersection(set(model_state_dict.keys()))
         print(f"Number of common keys between checkpoint and model: {len(common_keys)}")
         model.load_state_dict(checkpoint['state_dict'], strict=False)
